@@ -1,0 +1,70 @@
+@import "./_vars.css";
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	outline: none;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	background-color: var(--background);
+}
+
+.success {
+	background-color: green;
+}
+
+.error {
+	background-color: red;
+}
+
+.alert {
+	color: white;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+header nav ul {
+	margin-bottom: 20px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+
+.loader {
+	width: 48px;
+	height: 48px;
+	border: 5px solid var(--red);
+	border-bottom-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 99;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

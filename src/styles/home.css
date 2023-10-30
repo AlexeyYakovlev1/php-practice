@@ -1,0 +1,26 @@
+@import "./_global.css";
+
+.content {
+	margin-top: 20px;
+}
+
+#users-list {
+	display: flex;
+	flex-direction: column;
+}
+
+#users-list li {
+	padding: 10px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#users-list li:first-child {
+	margin-top: 20px;
+}
+
+#users-list li:nth-child(2n) {
+	background-color: lightgray;
+}
